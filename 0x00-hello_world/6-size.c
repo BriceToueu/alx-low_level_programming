@@ -23,5 +23,5 @@ int main(void)
 	printf("The size of a long long int is: %lu byte(s)\n", (unsigned long)sizeof(n));
 	printf("The size of a int is: %lu byte(s)\n", (unsigned long)sizeof(i));
 	printf("The size of a char is: %lu byte(s)\n", (unsigned long)sizeof(c));
-	Return (0);
+	return (0);
 }
