@@ -1,0 +1,3 @@
+#!/bin/bash
+gcc -S "$CFILE"
+mv "${CFILE%.c}.s" "$CFILE"
