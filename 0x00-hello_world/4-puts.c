@@ -1,9 +1,18 @@
 #include <stdio.h>
 
-/* First code in C */
+/**
+ * main - Entry point
+ *
+ * Description: prints the phrase 'Programming is like building a multilingual puzzle'
+ *              followed by new line.
+ *
+ * Return: Always 0 (sucess)
+ *
+ */
 
-int main() {
-    
-    puts("Programming is like building a multilingual puzzle");
-    return 0;
+int main(void)
+
+{
+	puts("\"Programming is like building a multilingual puzzle");
+	return (0);
 }
