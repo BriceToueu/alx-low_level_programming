@@ -16,11 +16,11 @@ int main(void)
 {
 	int n;
 
-	srand(time(0)); // Initializes the random number generator
-	                // with a seed based on the current time
+	srand(time(0)); /* Initializes the random number generator */
+	                /* with a seed based on the current time */
 
-	n = rand() - RAND_MAX / 2; // Generates a random number between
-	                           // -RAND_MAX/2 and RAND_MAX/2
+	n = rand() - RAND_MAX / 2; /* Generates a random number between */
+	                           /* -RAND_MAX/2 and RAND_MAX/2 */
 	
 	printf("%d", n);
 
