@@ -12,13 +12,23 @@
 int main(void)
 
 {
-	char c;
+	char c = 'a';
 
-	for (c = 'a'; c <= 'z'; c++)
+	/* While loop that prints lowercase letters */
+	while (c <= 'z')
+	{
 		putchar(c);
+		c++;
+	}
 
-	for (c = 'A'; c <= 'Z'; c++)
+	c = 'A';
+
+	/* While loop that prints uppercase letters */
+	while (c <= 'Z')
+	{
 		putchar(c);
+		c++;
+	}
 
 	putchar('\n');
 
