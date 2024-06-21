@@ -14,11 +14,13 @@
 int main(void)
 
 {
+	int n;
+
 	/* Initializing the random number generator */
 	srand(time(0));
 
 	/* Generates a random number between 0 and RAND_MAX */
-	int n = rand() - RAND_MAX / 2;
+	n = rand() - RAND_MAX / 2;
 
 	/* Retrieves the last digit of n */
 	int lastDigit = n % 10;
