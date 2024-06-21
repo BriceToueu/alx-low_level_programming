@@ -3,7 +3,7 @@
 /**
  * main - Entry point
  *
- * Description: Prints the lowercase alphabet in reserve, followed by a new line.
+ * Description: Prints the lowercase alphabet in reserve, followed by new line
  *
  * Return: Always 0 (sucess)
  */
