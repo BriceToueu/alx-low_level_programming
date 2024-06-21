@@ -17,19 +17,19 @@ int main(void)
 	int n;
 
 	srand(time(0)); /* Initializes the random number generator */
-	                /* with a seed based on the current time */
+			/* with a seed based on the current time */
 
 	n = rand() - RAND_MAX / 2; /* Generates a random number between */
-	                           /* -RAND_MAX/2 and RAND_MAX/2 */
+					/* -RAND_MAX/2 and RAND_MAX/2 */
 	
 	printf("%d", n);
 
 	if (n > 0)
-		printf("positive\n");
-	else if (n==0)
-		printf("it is zero\n");
+		printf(" is positive\n");
+	else if (n == 0)
+		printf(" is zero\n");
 	else
-		printf("negative\n");
+		printf(" is negative\n");
 
 	return (0);
 }
