@@ -1,4 +1,4 @@
-#include <unistd.h>
+#include <stdio.h>
 
 /**
  * main - Entry point
@@ -12,9 +12,9 @@ int main(void)
 
 {
 	/* Variables declaration and assignement */
-	char c == 'a';
+	char c;
 
-	while (c <= 'z')
+	while (c == 'a' <= 'z')
 	{
 		putchar(c);
 
