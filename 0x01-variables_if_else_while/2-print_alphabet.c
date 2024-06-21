@@ -14,7 +14,7 @@ int main(void)
 	/* Variables declaration and assignement */
 	char c;
 
-	while (c == 'a' <= 'z')
+	while ((c == 'a') <= 'z')
 	{
 		putchar(c);
 
