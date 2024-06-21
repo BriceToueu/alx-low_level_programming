@@ -21,7 +21,6 @@ int main(void)
 
 	n = rand() - RAND_MAX / 2; /* Generates a random number between */
 					/* -RAND_MAX/2 and RAND_MAX/2 */
-	
 	printf("%d", n);
 
 	if (n > 0)
