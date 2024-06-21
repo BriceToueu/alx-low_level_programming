@@ -15,10 +15,10 @@ int main(void)
 
 {
 	/* Initializing the random number generator */
-	srand(time(NULL));
+	srand(time(0));
 
 	/* Generates a random number between 0 and RAND_MAX */
-	int n = rand();
+	int n = rand() - RAND_MAX / 2;
 
 	/* Retrieves the last digit of n */
 	int lastDigit = n % 10;
@@ -31,7 +31,7 @@ int main(void)
 	}
 	else if (lastDigit == 0)
 	{
-		printf("and is 0\n")
+		printf("and is 0\n");
 	}
 	else
 	{
