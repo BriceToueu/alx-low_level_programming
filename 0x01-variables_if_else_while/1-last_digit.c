@@ -14,7 +14,9 @@
 int main(void)
 
 {
+	/* Variables declaration */
 	int n;
+	int lastDigit;
 
 	/* Initializing the random number generator */
 	srand(time(0));
