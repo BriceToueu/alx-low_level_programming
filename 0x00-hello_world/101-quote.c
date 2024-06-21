@@ -4,8 +4,9 @@
 /**
  * main - Entry point
  *
- * Description: prints exactly the text of the last task on  hello world C project
- *              followed by new line, to the standard error.
+ * Description: prints exactly the text of the last task on
+ *              hello world C project followed by
+ *              new line, to the standard error.
  *
  * Return: Alawys 1 (sucess)
  */
