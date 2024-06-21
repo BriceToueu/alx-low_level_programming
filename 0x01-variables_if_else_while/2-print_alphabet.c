@@ -12,8 +12,7 @@ int main(void)
 
 {
 	/* Variables declaration and assignement */
-	char c;
-	c == 'a';
+	char c == 'a';
 
 	while (c <= 'z')
 	{
