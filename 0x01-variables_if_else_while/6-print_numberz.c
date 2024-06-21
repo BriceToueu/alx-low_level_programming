@@ -14,8 +14,10 @@ int main(void)
 	int number = 0;
 
 	while ( number < 10)
+	{
 		putchar(number + '0'); /* Prints the number as a character */
 		number++;
+	}
 
 	putchar('\n'); /* new line */
 
