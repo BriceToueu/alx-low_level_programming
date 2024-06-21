@@ -14,12 +14,8 @@ int main(void)
 	/* Variables declaration and assignement */
 	char c;
 
-	while ((c == 'a') <= 'z')
-	{
+	for (c = 'a'; c <= 'z'; c++)
 		putchar(c);
-
-		c++;
-	}
 
 	putchar('\n');
 
