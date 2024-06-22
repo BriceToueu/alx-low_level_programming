@@ -31,10 +31,10 @@ int main(void)
 
 			/* if condition for the two numbers */
 			if (numberOne == 98 && numberTwo == 99)
-				continue;
-
-			putchar(',');
-			putchar(' ');
+			{
+				putchar(',');
+				putchar(' ');
+			}
 
 			numberTwo++;
 		}
