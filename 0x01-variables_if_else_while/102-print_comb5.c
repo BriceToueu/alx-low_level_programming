@@ -16,11 +16,12 @@ int main(void)
 	int numberTwo = 1;
 
 	/* First while loop for the first number */
-	while (numberOne <= 9)
+	while (numberOne <= 98)
 	{
+		numberTwo = numberOne + 1;
 
 		/* Second while loop for the second number */
-		while (numberTwo <= 9)
+		while (numberTwo <= 99)
 		{
 			putchar((numberOne / 10) + '0');
 			putchar((numberOne % 10) + '0');
@@ -29,7 +30,7 @@ int main(void)
 			putchar((numberTwo % 10) + '0');
 
 			/* if condition for the two numbers */
-			if (numberOne != 9 && numberTwo != 8)
+			if (numberOne == 98 && numberTwo == 99)
 				continue;
 
 			putchar(',');
@@ -39,7 +40,6 @@ int main(void)
 		}
 
 		numberOne++;
-		numberTwo = numberOne + 1;
 	}
 
 	putchar('\n');
