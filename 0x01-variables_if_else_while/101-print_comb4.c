@@ -14,7 +14,7 @@ int main(void)
 	/* Variables declarations */
 	int numberOne = 0;
 	int numberTwo = 1;
-	int numberThree = 2
+	int numberThree = 2;
 
 	/* First while loop for the first number */
 	while (numberOne < 9)
