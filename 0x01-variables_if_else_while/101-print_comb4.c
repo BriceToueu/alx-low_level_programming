@@ -13,14 +13,18 @@ int main(void)
 {
 	/* Variables declarations */
 	int numberOne = 0;
-	int numberTwo = 1;
-	int numberThree = 2;
+	int numberTwo, numberThree;
 
 	/* First while loop for the first number */
-	while (numberOne < 9)
+	while (numberOne < 8)
 	{
+		numberTwo = numberOne + 1;
+
+		/* Second while loop for the second number */
 		while (numberTwo < 9)
 		{
+			numberThree = numberTwo + 1;
+
 			/* Third while loop for the three number */
 			while (numberThree <= 9)
 			{
@@ -29,7 +33,7 @@ int main(void)
 				putchar(numberThree + '0');
 
 				/* if conditions on 8 and 9 */
-				if (numberTwo != 8 || numberThree != 9)
+				if (numberOne != 7 || numberTwo != 8 || numberThree != 9)
 				{
 					putchar(',');
 					putchar(' ');
@@ -39,11 +43,9 @@ int main(void)
 			}
 
 			numberTwo++;
-			numberThree = numberTwo + 1;
 		}
 
 		numberOne++;
-		numberTwo = numberOne + 1;
 	}
 
 	putchar('\n');
