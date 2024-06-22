@@ -12,15 +12,15 @@ int main(void)
 
 {
 	/* Variables declarations */
-	int numberOne = 0, numberTwo;
+	int numberOne = 0;
+	int numberTwo = 1;
 
 	/* First while loop for the first number */
-	while (numberOne <= 98)
+	while (numberOne <= 9)
 	{
-		numberTwo = numberOne + 1;
 
 		/* Second while loop for the second number */
-		while (numberTwo <= 99)
+		while (numberTwo <= 9)
 		{
 			putchar((numberOne / 10) + '0');
 			putchar((numberOne % 10) + '0');
@@ -29,7 +29,7 @@ int main(void)
 			putchar((numberTwo % 10) + '0');
 
 			/* if condition for the two numbers */
-			if (numberOne == 98 && numberTwo == 99)
+			if (numberOne != 9 && numberTwo != 8)
 				continue;
 
 			putchar(',');
@@ -39,6 +39,7 @@ int main(void)
 		}
 
 		numberOne++;
+		numberTwo = numberOne + 1;
 	}
 
 	putchar('\n');
