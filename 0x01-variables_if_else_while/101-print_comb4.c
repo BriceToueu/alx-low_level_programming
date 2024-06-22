@@ -19,7 +19,7 @@ int main(void)
 	/* First while loop for the first number */
 	while (numberOne < 9)
 	{
-		while(numberTwo < 9)
+		while (numberTwo < 9)
 		{
 			/* Third while loop for the three number */
 			while (numberThree <= 9)
@@ -27,17 +27,17 @@ int main(void)
 				putchar(numberOne + '0');
 				putchar(numberTwo + '0');
 				putchar(numberThree + '0');
-				
+
 				/* if conditions on 8 and 9 */
-				if (numberOne != 7 || numberTwo != 8 || numberThree != 9)
+				if (numberTwo != 8 || numberThree != 9)
 				{
 					putchar(',');
 					putchar(' ');
 				}
-				
+
 				numberThree++;
 			}
-			
+
 			numberTwo++;
 			numberThree = numberTwo + 1;
 		}
