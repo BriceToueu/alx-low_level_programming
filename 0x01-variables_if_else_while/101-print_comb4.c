@@ -32,7 +32,6 @@ int main(void)
 				if (numberOne != 7 || numberTwo != 8 || numberThree != 9)
 				{
 					putchar(',');
-					putchar(',');
 					putchar(' ');
 				}
 				
