@@ -30,9 +30,8 @@ int main(void)
 			putchar((numberTwo % 10) + '0');
 
 			/* if condition for the two numbers */
-			if (numberOne == 98 && numberTwo == 99)
+			if (numberOne != 98 || numberTwo != 99)
 			{
-				continue;
 
 				putchar(',');
 				putchar(' ');
