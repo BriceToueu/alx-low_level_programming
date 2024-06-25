@@ -10,8 +10,9 @@
 int _isalpha(int c)
 
 {
-	/* check if 'c' is within the ASCII range for lowercase
-	 * letters ('a' to 'z') or uppercase letters ('A' to 'Z') */
+	/** check if 'c' is within the ASCII range for lowercase
+	 * letters ('a' to 'z') or uppercase letters ('A' to 'Z')
+	 */
 
 	if ((c >= 'a' && c <= 'z') || (c >= 'A' && c <= 'Z'))
 		return (1);
