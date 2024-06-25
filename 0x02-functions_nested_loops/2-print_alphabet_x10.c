@@ -21,10 +21,10 @@ void print_alphabet_x10(void)
 			alphabet++; /* Go to next letter */
 		}
 
+		_putchar('\n'); /* New line */
+
 		alphabet = 'a'; /* Resets the letter to the beginning of the alphabet */
 
 		count++; /* Increment the counter */
 	}
-
-	_putchar('\n'); /* New line */
 }
