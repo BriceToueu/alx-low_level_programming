@@ -12,7 +12,7 @@ void times_table(void)
 
 	while (number <= 9)
 	{
-		_putchar('0);
+		_putchar('0');
 
 		multiplie = 1;
 
