@@ -9,6 +9,7 @@
  */
 
 int _abs(int);
+int add(int, int);
 int _isalpha(int c);
 int _islower(int c);
 void jack_bauer(void);
