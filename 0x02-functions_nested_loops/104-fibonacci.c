@@ -29,6 +29,7 @@ int main(void)
 	fib1_mi2 = fib1 % 10000000000;
 	fib2_mi1 = fib2 % 10000000000;
 
+	count = 93;
 	while (count < 99)
 	{
 		mi1 = fib1_mi1 + fib2_mi1;
