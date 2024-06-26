@@ -9,7 +9,7 @@
 int main(void)
 {
 	int count = 0;
-	unsigned long fib1 = 1, fib2 = 2, sum;
+	unsigned long fib1 = 1, fib2 = 2;
 	unsigned long next;
 
 	printf("%lu, %lu", fib1, fib2);
