@@ -8,54 +8,44 @@
 void print_times_table(int n)
 
 {
-	int number, multiplie, product;
-
-	if (n >= 0 && n <= 15)
-	
+	if (n > 15 || n < 0)
 	{
-		number = 0;
+		return;
+	}
 
-		while (number < n)
+	int number1 = 0;
 
+	while (number1 <= n)
+	{
+		int number2 = 0;
+
+		while (number2 <= n)
 		{
-			_putchar('0');
+			int product = number1 * number2;
 
-			multiplie = 0;
+			if (product < 10)
+			{
+				_putchar(' ');
+				_putchar(product + '0');
+			}
 
-			while (multiplie <= n)
+			else
+			{
+				_putchar((product / 10) + '0');
+				_putchar((product % 10) + '0');
+			}
 
+			if (number2 < n)
 			{
 				_putchar(',');
 				_putchar(' ');
-
-				product = number * multiplie;
-
-				if (product <= 99)
-					_putchar(' ');
-				if (product <= 9)
-					_putchar(' ');
-
-				if (product >= 100)
-
-				{
-					_putchar((product / 100) + '0');
-					_putchar(((product / 10) % 10 + '0'));
-				}
-
-				else if (product <= 99 && product >= 10)
-
-				{
-					_putchar((product / 10) + '0');
-				}
-
-				_putchar((product % 10) + '0');
-
-				multiplie++;
 			}
 
-			_putchar('\n');
-
-			number++;
+			number2++;
 		}
+
+		_putchar('\n');
+
+		number1++;
 	}
 }
