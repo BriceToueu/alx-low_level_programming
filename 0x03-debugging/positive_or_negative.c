@@ -5,17 +5,21 @@
  * Return: always 0
  */
 int positive_or_negative(int i)
+
 {
-	/* our code start there */
+	/* Our code start here */
 	if (i > 0)
 	{
 		printf("%d is positive\n", i);
-	} else if (i == 0)
+	}
+	else if (i == 0)
 	{
 		printf("%d is zero\n", i);
-	} else
+	}
+	else
 	{
 		printf("%d is negative\n", i);
 	}
+
 	return (0);
 }
