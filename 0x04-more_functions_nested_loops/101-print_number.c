@@ -7,9 +7,7 @@
  *
  * Return: none
  */
-
 void print_number(int n)
-
 {
 	int i;
 	int j;
@@ -22,9 +20,7 @@ void print_number(int n)
 	l = n;
 	t = n;
 	if (n == 0)
-	{
 		_putchar(48);
-	}
 	if (n < 0)
 	{
 		_putchar(45);
@@ -40,18 +36,14 @@ void print_number(int n)
 		l = (l / 10);
 		a++;
 	}
-	i = 1;
-	while (i < a)
+	for (i = 1; i < a; i++)
 	{
 		j = (j * 10);
-		i++;
 	}
-	i = 0;
-	while (i < a)
+	for (i = 0; i < a; i++)
 	{
 		_putchar((t / j) + 48);
 		t = (t % j);
 		j = (j / 10);
-		i++;
 	}
 }
