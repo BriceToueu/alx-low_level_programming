@@ -9,7 +9,6 @@
  */
 
 void more_numbers(void)
-
 {
 	int a;
 	int b;
