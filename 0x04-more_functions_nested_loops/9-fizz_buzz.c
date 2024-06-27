@@ -12,6 +12,7 @@ int main(void)
 
 {
 	int l = 1;
+
 	while (l <= 100)
 	{
 		if (l % 3 == 0 || l % 5 == 0)
