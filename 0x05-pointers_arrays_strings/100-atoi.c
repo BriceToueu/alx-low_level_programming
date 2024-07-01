@@ -1,3 +1,5 @@
+#include <stdio.h>
+
 /**
  * _atoi - convert sting to integer
  * @s: the string
