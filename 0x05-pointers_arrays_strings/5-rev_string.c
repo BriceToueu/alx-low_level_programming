@@ -2,7 +2,7 @@
 #include "_strlen.c"
 
 /**
- * rev_string - reverses a string 
+ * rev_string - reverses a string
  * @s: the string
  * Return: none
  */
