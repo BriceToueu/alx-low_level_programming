@@ -12,10 +12,9 @@
 char *_strncpy(char *dest, char *src, int n)
 
 {
-	int i;
+	int i = 0;
 
 	/* Copies characters from src to dest as long as i<n and src[i] is not '\0' */
-	i = 0;
 	while (i < n && src[i] != '\0')
 	{
 		dest[i] = src[i];
@@ -27,5 +26,6 @@ char *_strncpy(char *dest, char *src, int n)
 		dest[i] = '\0';
 		i++;
 	}
+	_putchar('\n');
 	return (dest);
 }
