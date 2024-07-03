@@ -20,13 +20,11 @@ char *_strncpy(char *dest, char *src, int n)
 		dest[i] = src[i];
 		i++;
 	}
-
 	/* Fills the rest of dest with null characters ('\0') until n is reached */
 	while (i < n)
 	{
 		dest[i] = '\0';
 		i++;
 	}
-
 	return (dest);
 }
