@@ -3,7 +3,7 @@
 int main(void)
 {
 	int n;
-    	int a[5];
+	int a[5];
 	int *p;
 
 	a[2] = 1024;
@@ -11,7 +11,7 @@ int main(void)
 	/*
 	 * write your lineof code here...
 	 * Remember:
-	 * - you are not allowed to use 
+	 * - you are not allowed to use
 	 * - you are not allowed to modify p
 	 * - only one statemnt
 	 * - you are not allowed to code anything else than this line of code
