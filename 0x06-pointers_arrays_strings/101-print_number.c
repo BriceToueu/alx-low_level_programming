@@ -1,40 +1,49 @@
-#include <stdio.h>
-#include <math.h>
 #include "main.h"
 
-
 /**
-* print_number - prints an integer
-* @n: the number
-*/
-
+ * print_number - prints an integer
+ *
+ * @n: integer n
+ *
+ * Return: none
+ */
 void print_number(int n)
-
 {
-	int digit, temp, num_digits;
+	int i;
+	int j;
+	int a;
+	unsigned int l;
+	unsigned int t;
 
+	j = 1;
+	a = 0;
+	l = n;
+	t = n;
+	if (n == 0)
+		_putchar(48);
 	if (n < 0)
 	{
-		_putchar('-'); /* Prints negative sign */
-		n = -n; /* Converts n to positive */
+		_putchar(45);
+		n = n + 1;
+		n = -n;
+		t = n;
+		l = n;
+		l = l + 1;
+		t = t + 1;
 	}
-
-	/* Calculating the number of digits in n */
-	temp = n;
-	num_digits = 0;
-
-	while (temp > 0)
+	while (l != 0)
 	{
-		temp /= 10;
-		num_digits++;
+		l = (l / 10);
+		a++;
 	}
-
-	/* Print the numbers one by one */
-	while (num_digits > 0)
+	for (i = 1; i < a; i++)
 	{
-		digit = n / 10;
-		_putchar('0' + digit); /* Converts digit to character */
-		n %= 10;
-		num_digits--;
+		j = (j * 10);
+	}
+	for (i = 0; i < a; i++)
+	{
+		_putchar((t / j) + 48);
+		t = (t % j);
+		j = (j / 10);
 	}
 }
