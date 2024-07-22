@@ -3,7 +3,7 @@
 
 int _putchar (char c);
 /**
- * struct god - data structure
+ * struct dog - data structure
  * @name: name of god
  * @age: age of dog
  * @owner: owner of dog
