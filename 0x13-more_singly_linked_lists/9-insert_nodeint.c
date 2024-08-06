@@ -28,14 +28,14 @@ listint_t *insert_nodeint_at_index(listint_t **head, unsigned int idx, int n)
 		return (new);
 	}
 
-	while (copy != NULL && current_index < (idx - 1))
+	while (current_index < (idx - 1))
 	{
+		if (copy == NULL || copy->next == NULL)
+			return (NULL);
+		
 		copy = copy->next;
 		current_index++;
 	}
-
-	if (copy == NULL || copy->next == NULL)
-		return (NULL);
 
 	new->next = copy->next;
 	copy->next = new;
